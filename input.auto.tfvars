@@ -1,1 +1,1 @@
-size = "large"
+size = "small"
