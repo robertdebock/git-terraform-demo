@@ -4,6 +4,8 @@ A demonstration environment to show how Git and Terraform can combine.
 
 ## Overview
 
+This is the infrastructure that's being built by this code:
+
 ```text
 +--- ssh_key: terraform-demo ---+
 | ~/.ssh/id_rsa                 |
@@ -24,6 +26,13 @@ A demonstration environment to show how Git and Terraform can combine.
 | # And a few other tasks.             |
 +--------------------------------------+
 ```
+
+### Workflow
+
+1. Change the code.
+2. Add the changes to git. (`git add . ; git commit -m "Description of changes" ; git push`)
+3. Check the [plan](https://app.terraform.io/app/robertdebock/workspaces/git-terraform-demo/).
+4. [Apply](https://app.terraform.io/app/robertdebock/workspaces/git-terraform-demo/) the code.
 
 ## Setup
 
