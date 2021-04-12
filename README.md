@@ -20,9 +20,9 @@ This is the infrastructure that's being built by this code:
 +----------------------------------+
                  |
                  V
-+---  template_file: cloud-init-yml ---+
++---  template_file: cloud-init.yml ---+
 | packages:                            |
-| - httpd                              |
+|   - httpd                            |
 | # And a few other tasks.             |
 +--------------------------------------+
 ```
