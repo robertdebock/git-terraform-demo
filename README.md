@@ -1,6 +1,6 @@
-# GitLab Terraform demo
+# Git Terraform demo
 
-A demonstration environment to show how GitLab and Terraform can combine.
+A demonstration environment to show how Git and Terraform can combine.
 
 ## Overview
 
@@ -25,11 +25,21 @@ A demonstration environment to show how GitLab and Terraform can combine.
 +--------------------------------------+
 ```
 
-## GitLab Runner (CI)
+## Setup
 
-GitLab will `init`, `validate`, `plan` and `apply`. The `apply` stage will only run on the master branch and is a manually approved step.
+The private SSH key is not saved in the repository, you may need to recreate a private and public key:
 
-The output will show the `IP_ADDRESS` required to login.
+```shell
+cd files
+ssh-keyget -f id_rsa
+git add id_rsa.pub
+git commit -m "New ssh key."
+git push
+```
+
+## Applying the code
+
+[Terraform Cloud](https://app.terraform.io/app/robertdebock/workspaces/git-terraform-demo/) is configured to execute this code.
 
 ## Logging in.
 
