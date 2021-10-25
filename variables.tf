@@ -1,3 +1,9 @@
+# Please set the `TF_VAR_do_token` variable.
+# `export TF_VAR_do_token`
+variable "do_token" {
+  type = string
+}
+
 variable "image" {
   description = "The image to use."
   default     = "ubuntu-21-04-x64"

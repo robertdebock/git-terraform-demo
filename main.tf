@@ -27,4 +27,3 @@ resource "digitalocean_project" "terraform-demo" {
   environment = "Production"
   resources   = [digitalocean_droplet.terraform-example.urn]
 }
-
