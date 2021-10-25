@@ -63,3 +63,31 @@ And login using `root`:
 ```shell
 ssh root@IP_ADDRESS
 ```
+
+## Importing resources
+
+You can import resource into the remote state:
+
+First create an empty resource in some .tf file. Likely `main.tf`:
+
+```hcl
+resource "digitalocean_droplet" "imported" {}
+```
+
+Next import the resource:
+
+```shell
+terraform import digitalocean_droplet.imported 263628785
+```
+
+Now you can see the resource in the state:
+
+```shell
+terraform show
+```
+
+And the resource can also be removed:
+
+```shell
+terraform state rm digitalocean_droplet.imported
+```
