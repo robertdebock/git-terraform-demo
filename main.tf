@@ -1,6 +1,6 @@
 # Create a new SSH key
 resource "digitalocean_ssh_key" "terraform-demo" {
-  name       = "terraform demo"
+  name       = "terraform demo 1"
   public_key = file("${path.module}/files/id_rsa.pub")
 }
 
