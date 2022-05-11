@@ -1,3 +1,4 @@
 output "droplet_ip" {
-  value = digitalocean_droplet.terraform-example.ipv4_address
+  description = "The IP address of the droplet."
+  value       = digitalocean_droplet.terraform-example.ipv4_address
 }
