@@ -6,7 +6,7 @@ variable "do_token" {
 
 variable "image" {
   description = "The image to use."
-  default     = "ubuntu-21-04-x64"
+  default     = "ubuntu-22-04-x64"
   type        = string
 }
 
