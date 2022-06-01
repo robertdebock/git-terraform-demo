@@ -7,7 +7,7 @@ resource "digitalocean_ssh_key" "terraform-demo" {
 # Create a new Droplet using the SSH key
 resource "digitalocean_droplet" "terraform-example" {
   image     = var.image
-  name      = "terraform-example"
+  name      = "terraform-example-1"
   region    = var.region
   size      = local.droplet_size
   ssh_keys  = [digitalocean_ssh_key.terraform-demo.fingerprint]
